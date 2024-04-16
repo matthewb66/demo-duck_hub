@@ -241,7 +241,7 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
-			<version>5.0.10.Final</version>
+			<version>5.6.15.Final</version>
 		</dependency>
 
 		<dependency>
@@ -339,10 +339,8 @@
 						</goals>
 						<configuration>
 							<tasks>
-								<copy
-									todir="${project.build.directory}/${project.build.finalName}/src">
-									<fileset dir="${project.build.sourceDirectory}"
-										includes="**/*.java" />
+								<copy todir="${project.build.directory}/${project.build.finalName}/src">
+									<fileset dir="${project.build.sourceDirectory}" includes="**/*.java"/>
 								</copy>
 							</tasks>
 						</configuration>
