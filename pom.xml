@@ -79,7 +79,7 @@
 		<dependency>
 		    <groupId>org.eclipse.jetty</groupId>
 		    <artifactId>jetty-server</artifactId>
-		    <version>7.1.0.v20100505</version>
+		    <version>12.0.12</version>
 		</dependency>
 		
 	
@@ -339,10 +339,8 @@
 						</goals>
 						<configuration>
 							<tasks>
-								<copy
-									todir="${project.build.directory}/${project.build.finalName}/src">
-									<fileset dir="${project.build.sourceDirectory}"
-										includes="**/*.java" />
+								<copy todir="${project.build.directory}/${project.build.finalName}/src">
+									<fileset dir="${project.build.sourceDirectory}" includes="**/*.java"/>
 								</copy>
 							</tasks>
 						</configuration>
